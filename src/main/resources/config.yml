@@ -1,0 +1,36 @@
+# DataGuard Configuration
+# Plugin by DataGuard for PaperMC 1.21.11
+
+# Auto-save interval in minutes (default: 30)
+auto-save-interval: 30
+
+# Whether automatic server-wide saving is enabled by default
+server-auto-save: true
+
+# Maximum number of snapshots to keep per player (0 = unlimited)
+max-player-snapshots: 20
+
+# Maximum number of server snapshots to keep (0 = unlimited)
+max-server-snapshots: 10
+
+# Date format used in snapshot folder names (don't change unless you know what you're doing)
+date-format: "yyyy-MM-dd_HH-mm-ss"
+
+# Prefix for all plugin messages
+prefix: "&8[&bDataGuard&8] &r"
+
+# Messages
+messages:
+  no-permission: "&cYou don't have permission to do that."
+  invalid-usage: "&cInvalid usage. Use /data help for help."
+  snapshot-created: "&aSnapshot created successfully: &e{snapshot}"
+  snapshot-deleted: "&aSnapshot deleted: &e{snapshot}"
+  snapshot-not-found: "&cSnapshot not found: &e{snapshot}"
+  snapshot-loaded: "&aSnapshot loaded successfully: &e{snapshot}"
+  auto-save-enabled: "&aAutomatic saving &2enabled&a."
+  auto-save-disabled: "&cAutomatic saving &4disabled&c."
+  config-reloaded: "&aConfiguration reloaded."
+  player-not-found: "&cPlayer not found: &e{player}"
+  no-snapshots: "&cNo snapshots found."
+  snapshot-list-header: "&8--- &bSnapshots for &e{target} &8---"
+  snapshot-list-entry: "&7- &e{snapshot}"

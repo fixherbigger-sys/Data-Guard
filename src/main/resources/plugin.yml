@@ -1,0 +1,20 @@
+name: DataGuard
+version: '${project.version}'
+main: dev.dataguard.DataGuard
+api-version: '1.21'
+description: Automatic player and server data saving plugin
+authors: [DataGuard]
+
+permissions:
+  dataguard.admin:
+    description: Access to all DataGuard OP commands
+    default: op
+  dataguard.player:
+    description: Access to member-level DataGuard commands
+    default: true
+
+commands:
+  data:
+    description: Main DataGuard command
+    usage: /data <player|server|reload|automatic|load> [args...]
+    permission: dataguard.player
